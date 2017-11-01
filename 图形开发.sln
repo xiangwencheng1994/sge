@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.26730.12
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "lesson1.Color", "lesson1.Color\lesson1.Color.vcxproj", "{CE007F2C-9047-4973-ADDA-51C5D9FF5559}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "lesson2.Canvas", "lesson2.Canvas\lesson2.Canvas.vcxproj", "{BF6CB4CA-5558-4382-BB9F-6CD208F9DABE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -21,6 +23,14 @@ Global
 		{CE007F2C-9047-4973-ADDA-51C5D9FF5559}.Release|x64.Build.0 = Release|x64
 		{CE007F2C-9047-4973-ADDA-51C5D9FF5559}.Release|x86.ActiveCfg = Release|Win32
 		{CE007F2C-9047-4973-ADDA-51C5D9FF5559}.Release|x86.Build.0 = Release|Win32
+		{BF6CB4CA-5558-4382-BB9F-6CD208F9DABE}.Debug|x64.ActiveCfg = Debug|x64
+		{BF6CB4CA-5558-4382-BB9F-6CD208F9DABE}.Debug|x64.Build.0 = Debug|x64
+		{BF6CB4CA-5558-4382-BB9F-6CD208F9DABE}.Debug|x86.ActiveCfg = Debug|Win32
+		{BF6CB4CA-5558-4382-BB9F-6CD208F9DABE}.Debug|x86.Build.0 = Debug|Win32
+		{BF6CB4CA-5558-4382-BB9F-6CD208F9DABE}.Release|x64.ActiveCfg = Release|x64
+		{BF6CB4CA-5558-4382-BB9F-6CD208F9DABE}.Release|x64.Build.0 = Release|x64
+		{BF6CB4CA-5558-4382-BB9F-6CD208F9DABE}.Release|x86.ActiveCfg = Release|Win32
+		{BF6CB4CA-5558-4382-BB9F-6CD208F9DABE}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

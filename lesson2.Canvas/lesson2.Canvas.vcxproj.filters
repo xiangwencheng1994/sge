@@ -15,6 +15,23 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="sgeApp.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="sgeCanvas.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="winMain.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="sgeApp.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="sgeCanvas.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
     <ClInclude Include="sgeMath.h">
       <Filter>头文件</Filter>
     </ClInclude>

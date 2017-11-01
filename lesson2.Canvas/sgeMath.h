@@ -5,15 +5,18 @@
 #ifndef SGE_MATH_H
 #define SGE_MATH_H
 
+#include <assert.h>
+#include <malloc.h>
+#include <string.h>
+#include <math.h>
+
 #pragma pack(push)
 #pragma pack(1)
 
 namespace sge
 {
-    typedef unsigned char       byte;
-    typedef int                 sizei;
-    typedef struct Color4f      Color4f;
-    typedef union Color4b       Color4b;
+    typedef unsigned char           byte;
+    typedef int                     sizei;
 
     /**
      *  用3个float表示颜色
@@ -49,6 +52,16 @@ namespace sge
         Color4f(float r, float g, float b, float a = 1) : _red(r), _green(g), _blue(b), _alpha(a) {}
     };
 
+    inline Color3f alphaBlend(Color3f &bgcolor, Color4f &fcolor)
+    {
+        float pA = 1.0f - fcolor._alpha;
+        Color3f out;
+        out._red = pA * bgcolor._red + fcolor._alpha * fcolor._red;
+        out._green = pA * bgcolor._green + fcolor._alpha * fcolor._green;
+        out._blue = pA * bgcolor._blue + fcolor._alpha * fcolor._blue;
+        return out;
+    }
+
     /**
      *  用四字节保存的颜色结构
      *  内存分别为Alpha,Blue,Green,Red
@@ -65,10 +78,14 @@ namespace sge
         };
 
     public:
+        Color4b() {}
         Color4b(int value) : _value(value) {}
         Color4b(byte a, byte r, byte g, byte b) : _alpha(a), _blue(b), _green(g), _red(r) {}
     };
 
+    typedef struct Color3f          color3f;
+    typedef struct Color4f          color4f;
+    typedef union Color4b           color4b;
 }
 
 #pragma pack(pop)
