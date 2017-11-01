@@ -33,8 +33,8 @@
 
 	public:
 		Color4f() {}
-		Color4f(Color3f &c):_red(c._red), _green(c._green), _blue(c._blue), _alpha(0) {}
-		Color4f(float r, float g, float b, float a = 0) : _red(r), _green(g), _blue(b), _alpha(a) {}
+		Color4f(Color3f &c):_red(c._red), _green(c._green), _blue(c._blue), _alpha(1.0f) {}
+		Color4f(float r, float g, float b, float a = 1.0f) : _red(r), _green(g), _blue(b), _alpha(a) {}
 	};
 ```
 ## 使用4个字节表示颜色
@@ -60,6 +60,8 @@
 ```
 - 这里我们使用了联合体定义Color4b结构，这样可以方便了各分量进行访问，也方便了int赋值（形如0xAABBGGRR）。
 - 这里我们没有使用class来定义颜色，因为颜色本来就只是一种描述结构，与类的封装、继承、多态毫无关系。
+
+### 本节不能生成可执行程序
 
 -------------------
 ### 本章代码位于sgeMath.h中，github链接https://github.com/xiangwencheng1994/sge/tree/master/lesson1.Color

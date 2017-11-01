@@ -48,8 +48,8 @@ namespace sge
 
     public:
         Color4f() {}
-        Color4f(Color3f &c):_red(c._red), _green(c._green), _blue(c._blue), _alpha(0) {}
-        Color4f(float r, float g, float b, float a = 1) : _red(r), _green(g), _blue(b), _alpha(a) {}
+        Color4f(Color3f &c):_red(c._red), _green(c._green), _blue(c._blue), _alpha(1.0f) {}
+        Color4f(float r, float g, float b, float a = 1.0f) : _red(r), _green(g), _blue(b), _alpha(a) {}
     };
 
     inline Color3f alphaBlend(Color3f &bgcolor, Color4f &fcolor)
@@ -82,6 +82,8 @@ namespace sge
         Color4b(int value) : _value(value) {}
         Color4b(byte a, byte r, byte g, byte b) : _alpha(a), _blue(b), _green(g), _red(r) {}
     };
+
+
 
     typedef struct Color3f          color3f;
     typedef struct Color4f          color4f;

@@ -12,8 +12,6 @@ namespace sge
 {
     typedef unsigned char       byte;
     typedef int                 sizei;
-    typedef struct Color4f      Color4f;
-    typedef union Color4b       Color4b;
 
     /**
      *  用3个float表示颜色
@@ -45,8 +43,8 @@ namespace sge
 
     public:
         Color4f() {}
-        Color4f(Color3f &c):_red(c._red), _green(c._green), _blue(c._blue), _alpha(0) {}
-        Color4f(float r, float g, float b, float a = 1) : _red(r), _green(g), _blue(b), _alpha(a) {}
+        Color4f(Color3f &c):_red(c._red), _green(c._green), _blue(c._blue), _alpha(1.0f) {}
+        Color4f(float r, float g, float b, float a = 1.0f) : _red(r), _green(g), _blue(b), _alpha(a) {}
     };
 
     /**
@@ -69,6 +67,10 @@ namespace sge
         Color4b(byte a, byte r, byte g, byte b) : _alpha(a), _blue(b), _green(g), _red(r) {}
     };
 
+
+
+    typedef struct Color4f      Color4f;
+    typedef union Color4b       Color4b;
 }
 
 #pragma pack(pop)
