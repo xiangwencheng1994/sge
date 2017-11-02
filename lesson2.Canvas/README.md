@@ -95,6 +95,8 @@ LRESULT sgeApp::wndProc(HWND hWnd, UINT msgId, WPARAM wParam, LPARAM lParam)
     return 0;
 ```
 
+-------------------
+
 ## 实现画布类
 
 > 我们把画布封装在一个Canvas的类中，我们分配了一片内存来保存画布的每个点的颜色信息
@@ -205,28 +207,21 @@ void sge::Canvas::writeToBitmap(void* buffer,int width, int height, int startX, 
 BitBlt(_hDC, 0, 0, _canvas->width(), _canvas->height(), _hMem, 0, 0, SRCCOPY);
 ```
 
+-------------------
+
 ## 实现画点
 
 - 画点的时候我们将画布上原本于绘制颜色进行混合得出最终颜色
-
 ``` c++
-void sge::Canvas::drawPoint(int x, int y, color4f& color)
+void sge::Canvas::drawPoint(int x, int y, const color4f& color)
 {
     if (x < 0 || x >= _width || y < 0 || y >= _height) return;
     Color3f & bkcolor = _pixels[y * _width + x];
     bkcolor = alphaBlend(bkcolor, color);
 }
-// sgeMath.h
-inline Color3f alphaBlend(Color3f &bgcolor, Color4f &fcolor)
-{
-    float pA = 1.0f - fcolor._alpha;
-    Color3f out;
-    out._red = pA * bgcolor._red + fcolor._alpha * fcolor._red;
-    out._green = pA * bgcolor._green + fcolor._alpha * fcolor._green;
-    out._blue = pA * bgcolor._blue + fcolor._alpha * fcolor._blue;
-    return out;
-}
 ```
+
+-------------------
 
 ### 本节代码效果图
 

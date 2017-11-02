@@ -25,6 +25,8 @@ namespace sge
 
         void    clear();
         void    drawPoint(int x, int y, const color4f& color);
+        void    drawLine(int x1, int y1, int x2, int y2, const color4f& c1);
+        void    drawLine(int x1, int y1, int x2, int y2, const color4f& c1, const color4f& c2);
 
         void    writeToBitmap(void* buffer, int width, int height, int startX = 0, int startY = 0);
     private:

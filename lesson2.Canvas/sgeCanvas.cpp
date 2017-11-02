@@ -31,7 +31,7 @@ void sge::Canvas::clear()
     memset(_pixels, 0, dataSize());
 }
 
-void sge::Canvas::drawPoint(int x, int y, color4f& color)
+void sge::Canvas::drawPoint(int x, int y, const color4f& color)
 {
     if (x < 0 || x >= _width || y < 0 || y >= _height) return;
     Color3f & bkcolor = _pixels[y * _width + x];

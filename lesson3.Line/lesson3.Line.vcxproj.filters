@@ -15,6 +15,9 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
+    <None Include="README.md" />
+  </ItemGroup>
+  <ItemGroup>
     <ClCompile Include="sgeApp.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
@@ -38,8 +41,5 @@
     <ClInclude Include="sgeMath.h">
       <Filter>头文件</Filter>
     </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="README.md" />
   </ItemGroup>
 </Project>

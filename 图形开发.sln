@@ -7,6 +7,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "lesson1.Color", "lesson1.Co
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "lesson2.Canvas", "lesson2.Canvas\lesson2.Canvas.vcxproj", "{BF6CB4CA-5558-4382-BB9F-6CD208F9DABE}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "lesson3.Line", "lesson3.Line\lesson3.Line.vcxproj", "{D072DE41-440B-45B4-A0F1-A83AE6364EEA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -31,6 +33,14 @@ Global
 		{BF6CB4CA-5558-4382-BB9F-6CD208F9DABE}.Release|x64.Build.0 = Release|x64
 		{BF6CB4CA-5558-4382-BB9F-6CD208F9DABE}.Release|x86.ActiveCfg = Release|Win32
 		{BF6CB4CA-5558-4382-BB9F-6CD208F9DABE}.Release|x86.Build.0 = Release|Win32
+		{D072DE41-440B-45B4-A0F1-A83AE6364EEA}.Debug|x64.ActiveCfg = Debug|x64
+		{D072DE41-440B-45B4-A0F1-A83AE6364EEA}.Debug|x64.Build.0 = Debug|x64
+		{D072DE41-440B-45B4-A0F1-A83AE6364EEA}.Debug|x86.ActiveCfg = Debug|Win32
+		{D072DE41-440B-45B4-A0F1-A83AE6364EEA}.Debug|x86.Build.0 = Debug|Win32
+		{D072DE41-440B-45B4-A0F1-A83AE6364EEA}.Release|x64.ActiveCfg = Release|x64
+		{D072DE41-440B-45B4-A0F1-A83AE6364EEA}.Release|x64.Build.0 = Release|x64
+		{D072DE41-440B-45B4-A0F1-A83AE6364EEA}.Release|x86.ActiveCfg = Release|Win32
+		{D072DE41-440B-45B4-A0F1-A83AE6364EEA}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
