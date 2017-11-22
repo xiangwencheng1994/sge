@@ -11,7 +11,12 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "lesson3.Line", "lesson3.Lin
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "lesson4.Triangle", "lesson4.Triangle\lesson4.Triangle.vcxproj", "{C8EF9A15-159E-44AA-AD6D-3B4E6BCD96EF}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "lesson5.Texture", "lesson5.Texture\lesson5.Texture.vcxproj", "{876D9503-231D-4C3F-B67E-B8BFDD348E69}"
+EndProject
 Global
+	GlobalSection(Performance) = preSolution
+		HasPerformanceSessions = true
+	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
 		Debug|x86 = Debug|x86
@@ -51,6 +56,14 @@ Global
 		{C8EF9A15-159E-44AA-AD6D-3B4E6BCD96EF}.Release|x64.Build.0 = Release|x64
 		{C8EF9A15-159E-44AA-AD6D-3B4E6BCD96EF}.Release|x86.ActiveCfg = Release|Win32
 		{C8EF9A15-159E-44AA-AD6D-3B4E6BCD96EF}.Release|x86.Build.0 = Release|Win32
+		{876D9503-231D-4C3F-B67E-B8BFDD348E69}.Debug|x64.ActiveCfg = Debug|x64
+		{876D9503-231D-4C3F-B67E-B8BFDD348E69}.Debug|x64.Build.0 = Debug|x64
+		{876D9503-231D-4C3F-B67E-B8BFDD348E69}.Debug|x86.ActiveCfg = Debug|Win32
+		{876D9503-231D-4C3F-B67E-B8BFDD348E69}.Debug|x86.Build.0 = Debug|Win32
+		{876D9503-231D-4C3F-B67E-B8BFDD348E69}.Release|x64.ActiveCfg = Release|x64
+		{876D9503-231D-4C3F-B67E-B8BFDD348E69}.Release|x64.Build.0 = Release|x64
+		{876D9503-231D-4C3F-B67E-B8BFDD348E69}.Release|x86.ActiveCfg = Release|Win32
+		{876D9503-231D-4C3F-B67E-B8BFDD348E69}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
